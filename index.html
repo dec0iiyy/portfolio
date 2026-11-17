@@ -167,13 +167,12 @@ footer { margin-top: 76px; padding-top: 22px; border-top: 1px solid var(--border
   <div class="actions">
     <a class="button primary" href="mailto:dec0iiyy@gmail.com">Написать на почту</a>
     <a class="button" href="https://github.com/dec0iiyy">GitHub</a>
-    <a class="button" href="tel:+79650352706">+7 (965) 035-27-06</a>
   </div>
 
   <ul class="numbers">
     <li><b>25</b><span>фича-модулей спроектировал с нуля</span></li>
-    <li><b>100+</b><span>модулей в мессенджере, который развивал</span></li>
-    <li><b>×2</b><span>переходов к оплате после A/B-теста</span></li>
+    <li><b>30+</b><span>A/B‑экспериментов запустил в продукте</span></li>
+    <li><b>×2</b><span>переходов к оплате после A/B‑теста</span></li>
     <li><b>47</b><span>pull request’ов принято в open source</span></li>
   </ul>
 </header>
@@ -188,18 +187,18 @@ footer { margin-top: 76px; padding-top: 22px; border-top: 1px solid var(--border
     <div>
       <h3>Android-разработчик</h3>
       <p class="place">Продуктовая компания, приложение для Android и Android TV</p>
-      <p class="about">Разрабатываю приложения для телефона и телевизора на общей кодовой базе.</p>
+      <p class="about">Веду приложения для телефона и телевизора на общей кодовой базе: больше 400 pull request’ов за полтора года.</p>
       <ul>
-        <li>Спроектировал архитектуру MVI + Clean с нуля и вырастил её с 5 до 25 фича-модулей: параллельная компиляция заметно ускорила сборку.</li>
-        <li>Сделал приложение для Android TV на общем коде с мобильным: Gradle flavors разделяют UI и собирают отдельный APK под каждую платформу.</li>
-        <li>Интегрировал нативное сетевое ядро и вынес его работу в Foreground Service.</li>
-        <li>Собрал оплату целиком: подписки Google Play Billing и собственная веб-касса.</li>
-        <li>Paywall раз в 24 часа вместо разового показа: переходов на экран оплаты стало вдвое больше. Акционный тариф после ухода с paywall вернул 30% отказавшихся.</li>
-        <li>Разметил аналитику во всём приложении через AppMetrica и Adjust: показы, клики, конверсии.</li>
+        <li>Спроектировал архитектуру MVI + Clean с нуля и вырастил её с 5 до 25 фича-модулей. Границы между модулями проверяет сборка.</li>
+        <li>Собрал оплату целиком: Google Play Billing, веб-касса и пейволы на Adapty. Платёжного провайдера можно переключить удалённо, без релиза.</li>
+        <li>Запустил больше 30 A/B‑экспериментов с пейволом, тарифами, онбордингом и входом. Пейвол раз в сутки вместо разового показа удвоил переходы к оплате, акционный тариф вернул 30% отказавшихся.</li>
+        <li>Вынес нативное сетевое ядро в отдельный процесс с IPC и Foreground Service, убрал ANR на старте, уменьшил APK на 6,3 МБ.</li>
+        <li>Перевёл проект на Gradle 9 и AGP 9 с Isolated Projects и на Navigation 3. Сделал адаптивный интерфейс для планшетов, альбомной ориентации и крупного шрифта.</li>
+        <li>Сделал приложение для Android TV на общем коде с мобильным: Gradle flavors собирают отдельный APK под каждую платформу.</li>
         <li>Провожу code review и технические интервью.</li>
       </ul>
       <ul class="tags">
-        <li>Kotlin</li><li>MVI</li><li>Compose</li><li>Koin</li><li>Room</li><li>Foreground Service</li><li>Play Billing</li><li>AppMetrica</li><li>Adjust</li><li>Sentry</li>
+        <li>Kotlin</li><li>MVI</li><li>Compose</li><li>Navigation 3</li><li>Koin</li><li>Room</li><li>Play Billing</li><li>Adapty</li><li>AppMetrica</li><li>Adjust</li><li>Firebase</li><li>Gradle 9</li>
       </ul>
     </div>
   </article>
@@ -244,14 +243,14 @@ footer { margin-top: 76px; padding-top: 22px; border-top: 1px solid var(--border
   <h2>Стек</h2>
   <dl class="stack">
     <div><dt>Языки</dt><dd>Kotlin, Rust</dd></div>
-    <div><dt>Интерфейс</dt><dd>Jetpack Compose, Material 3, XML, Android TV</dd></div>
+    <div><dt>Интерфейс</dt><dd>Jetpack Compose, Material 3, Navigation 3, адаптивный UI, XML, Android TV</dd></div>
     <div><dt>Асинхронность</dt><dd>Coroutines, Flow</dd></div>
     <div><dt>Архитектура</dt><dd>MVI, MVVM, Clean Architecture, многомодульность, Kotlin Multiplatform</dd></div>
     <div><dt>Данные и сеть</dt><dd>Room, Retrofit, OkHttp, Ktor, WebSocket</dd></div>
     <div><dt>DI</dt><dd>Koin, Hilt</dd></div>
-    <div><dt>Платформа</dt><dd>Foreground Service, Play Billing, DeepLink</dd></div>
-    <div><dt>Аналитика</dt><dd>AppMetrica, Adjust, Firebase, Sentry</dd></div>
-    <div><dt>Сборка и качество</dt><dd>Gradle convention plugins, detekt, R8, GitHub Actions, GitLab</dd></div>
+    <div><dt>Платформа</dt><dd>Foreground Service, IPC, Play Billing, Adapty, DeepLink</dd></div>
+    <div><dt>Аналитика и эксперименты</dt><dd>AppMetrica, Adjust, Firebase, Varioqub, Sentry</dd></div>
+    <div><dt>Сборка и качество</dt><dd>Gradle 9, AGP 9, convention plugins, detekt, R8, GitHub Actions, GitLab</dd></div>
   </dl>
 </section>
 
@@ -265,7 +264,6 @@ footer { margin-top: 76px; padding-top: 22px; border-top: 1px solid var(--border
   <h2>Контакты</h2>
   <ul class="contacts">
     <li><a class="button primary" href="mailto:dec0iiyy@gmail.com">dec0iiyy@gmail.com</a></li>
-    <li><a class="button" href="tel:+79650352706">+7 (965) 035-27-06</a></li>
     <li><a class="button" href="https://github.com/dec0iiyy">github.com/dec0iiyy</a></li>
   </ul>
 </section>
